@@ -29,7 +29,9 @@ public class Team {
     }
 
     public void addMember(String memberName) {
-        members.add(new TeamMember(memberName));
+        TeamMember member = new TeamMember(memberName);
+        member.assignTeam(this);
+        members.add(member);
     }
 
     public Long getId() {

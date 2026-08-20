@@ -1,0 +1,87 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---< jp.tonbiattack.debuglab:spring-jpa-owning-side-association-lab >---
+[INFO] Building spring-jpa-owning-side-association-lab 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.4.1:clean (default-clean) @ spring-jpa-owning-side-association-lab ---
+[INFO] Deleting /home/ubuntu/spring-jpa-owning-side-association-lab/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:resources (default-resources) @ spring-jpa-owning-side-association-lab ---
+[INFO] skip non existing resourceDirectory /home/ubuntu/spring-jpa-owning-side-association-lab/src/main/resources
+[INFO] skip non existing resourceDirectory /home/ubuntu/spring-jpa-owning-side-association-lab/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:compile (default-compile) @ spring-jpa-owning-side-association-lab ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.3.1:testResources (default-testResources) @ spring-jpa-owning-side-association-lab ---
+[INFO] skip non existing resourceDirectory /home/ubuntu/spring-jpa-owning-side-association-lab/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.13.0:testCompile (default-testCompile) @ spring-jpa-owning-side-association-lab ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug parameters release 21] to target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.5.2:test (default-test) @ spring-jpa-owning-side-association-lab ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running jp.tonbiattack.debuglab.team.OwningSideObservationTest
+10:37:57.465 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [jp.tonbiattack.debuglab.team.OwningSideObservationTest]: OwningSideObservationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+10:37:57.554 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration jp.tonbiattack.debuglab.team.TeamApplication for test class jp.tonbiattack.debuglab.team.OwningSideObservationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-08-20T10:37:57.899Z  INFO 25167 --- [           main] j.t.d.team.OwningSideObservationTest     : Starting OwningSideObservationTest using Java 21.0.11 with PID 25167 (started by ubuntu in /home/ubuntu/spring-jpa-owning-side-association-lab)
+2026-08-20T10:37:57.900Z  INFO 25167 --- [           main] j.t.d.team.OwningSideObservationTest     : No active profile set, falling back to 1 default profile: "default"
+2026-08-20T10:37:58.209Z  INFO 25167 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-20T10:37:58.252Z  INFO 25167 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interface.
+2026-08-20T10:37:58.565Z  INFO 25167 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-20T10:37:58.705Z  INFO 25167 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:4fe193a3-5f55-442c-9410-4bb9c82bd8f9 user=SA
+2026-08-20T10:37:58.707Z  INFO 25167 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-20T10:37:58.759Z  INFO 25167 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-20T10:37:58.795Z  INFO 25167 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-08-20T10:37:58.823Z  INFO 25167 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-08-20T10:37:59.041Z  INFO 25167 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-20T10:37:59.103Z  INFO 25167 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-20T10:37:59.835Z  INFO 25167 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-20T10:37:59.877Z  INFO 25167 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20T10:38:00.211Z  INFO 25167 --- [           main] j.t.d.team.OwningSideObservationTest     : Started OwningSideObservationTest in 2.547 seconds (process running for 3.316)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (/home/ubuntu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.11/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.397 s -- in jp.tonbiattack.debuglab.team.OwningSideObservationTest
+[INFO] Running jp.tonbiattack.debuglab.team.TeamRepositoryTest
+2026-08-20T10:38:00.727Z  INFO 25167 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [jp.tonbiattack.debuglab.team.TeamRepositoryTest]: TeamRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-20T10:38:00.729Z  INFO 25167 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration jp.tonbiattack.debuglab.team.TeamApplication for test class jp.tonbiattack.debuglab.team.TeamRepositoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s -- in jp.tonbiattack.debuglab.team.TeamRepositoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.789 s
+[INFO] Finished at: 2026-08-20T10:38:00Z
+[INFO] ------------------------------------------------------------------------

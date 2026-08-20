@@ -21,18 +21,18 @@ class OwningSideObservationTest {
     private JdbcTemplate jdbcTemplate;
 
     @Test
-    void inverseSideOnlyDoesNotSetForeignKey() {
+    void owningSideAssignmentSetsForeignKey() {
         transactionTemplate.executeWithoutResult(status -> {
             Team team = new Team("team-observation-001");
             team.addMember("Mio");
             repository.saveAndFlush(team);
         });
 
-        Integer unassignedCount = jdbcTemplate.queryForObject(
-                "select count(*) from team_member where team_id is null", Integer.class
+        Integer relatedCount = jdbcTemplate.queryForObject(
+                "select count(*) from team_member where team_id is not null", Integer.class
         );
 
-        assertEquals(1, unassignedCount,
-                "逆側のコレクションだけを更新すると多側の外部キーはnullのまま保存される");
+        assertEquals(1, relatedCount,
+                "所有側へチームを設定すると多側の外部キーが保存される");
     }
 }
